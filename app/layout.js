@@ -1,6 +1,12 @@
+// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Provider from "./provider";
+
+export const metadata = {
+  title: "Velocity AI", 
+  description: "Website Builder",
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,8 +16,10 @@ const geistSans = Geist({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <Provider>{children}</Provider>
+      <body className={geistSans.variable}>
+        <Provider>
+          {children}
+          </Provider>
       </body>
     </html>
   );
