@@ -9,8 +9,8 @@ function Header() {
       <Image src="/logo.png" alt="Logo" width={40} height={40} />
 
       <div className="flex gap-4">
-        <Button variant="ghost">Sign In</Button>
-        <Button className="text-white" style={{backgroundColor:Colors.BLUE}}>Get Started</Button>
+        <Button  className="cursor-pointer" variant="ghost">Sign In</Button>
+        <Button className="text-white cursor-pointer" style={{backgroundColor:Colors.BLUE}}>Get Started</Button>
       </div>
     </div>
   );
